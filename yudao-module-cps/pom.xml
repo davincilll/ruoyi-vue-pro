@@ -10,6 +10,7 @@
     <modules>
         <module>yudao-module-cps-api</module>
         <module>yudao-module-cps-biz</module>
+        <module>yudao-spring-boot-starter-biz-cps</module>
     </modules>
     <modelVersion>4.0.0</modelVersion>
 
