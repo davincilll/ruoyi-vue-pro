@@ -163,6 +163,11 @@
                 <enabled>false</enabled>
             </releases>
         </repository>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/davincilll/yudao-module-archetype</url>
+        </repository>
     </repositories>
 
 </project>
