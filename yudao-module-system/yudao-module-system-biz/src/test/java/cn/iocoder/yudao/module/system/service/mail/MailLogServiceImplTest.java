@@ -3,7 +3,7 @@ package cn.iocoder.yudao.module.system.service.mail;
 import cn.hutool.core.map.MapUtil;
 import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
 import cn.iocoder.yudao.module.system.controller.admin.mail.vo.log.MailLogPageReqVO;
 import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailAccountDO;
 import cn.iocoder.yudao.module.system.dal.dataobject.mail.MailLogDO;
@@ -17,11 +17,11 @@ import javax.annotation.Resource;
 import java.util.Map;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.*;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**

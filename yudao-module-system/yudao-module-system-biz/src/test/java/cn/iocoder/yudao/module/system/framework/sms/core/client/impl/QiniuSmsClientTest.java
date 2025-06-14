@@ -2,7 +2,7 @@ package cn.iocoder.yudao.module.system.framework.sms.core.client.impl;
 
 import cn.iocoder.yudao.framework.common.core.KeyValue;
 import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
-import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseMockitoUnitTest;
 import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsReceiveRespDTO;
 import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsSendRespDTO;
 import cn.iocoder.yudao.module.system.framework.sms.core.client.dto.SmsTemplateRespDTO;
@@ -17,7 +17,8 @@ import org.mockito.MockedStatic;
 import java.time.LocalDateTime;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomLongId;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomString;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.*;
 import static org.mockito.ArgumentMatchers.anyString;

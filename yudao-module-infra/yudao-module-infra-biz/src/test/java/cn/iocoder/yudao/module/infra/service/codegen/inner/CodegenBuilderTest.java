@@ -1,6 +1,6 @@
 package cn.iocoder.yudao.module.infra.service.codegen.inner;
 
-import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseMockitoUnitTest;
 import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenColumnDO;
 import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenTableDO;
 import com.baomidou.mybatisplus.generator.config.po.TableField;
@@ -13,7 +13,7 @@ import org.mockito.InjectMocks;
 import java.util.Collections;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomLongId;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomLongId;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;

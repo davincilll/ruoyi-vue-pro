@@ -1,8 +1,8 @@
 package cn.iocoder.yudao.module.system.service.logger;
 
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
-import cn.iocoder.yudao.framework.test.core.util.RandomUtils;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils;
 import cn.iocoder.yudao.module.system.api.logger.dto.OperateLogCreateReqDTO;
 import cn.iocoder.yudao.module.system.api.logger.dto.OperateLogPageReqDTO;
 import cn.iocoder.yudao.module.system.controller.admin.logger.vo.operatelog.OperateLogPageReqVO;
@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
 import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @Import({OperateLogServiceImpl.class})

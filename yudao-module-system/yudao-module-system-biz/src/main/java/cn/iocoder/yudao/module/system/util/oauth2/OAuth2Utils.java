@@ -4,7 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.LocalDateTimeUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.iocoder.yudao.framework.common.util.http.HttpUtils;
-import cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils;
+import cn.iocoder.yudao.framework.ability.security.core.util.SecurityFrameworkUtils;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;

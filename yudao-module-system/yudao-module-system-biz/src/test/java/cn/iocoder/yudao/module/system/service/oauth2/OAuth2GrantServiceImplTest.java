@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.system.service.oauth2;
 
 import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseMockitoUnitTest;
 import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2CodeDO;
 import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
@@ -14,8 +14,8 @@ import org.mockito.Mock;
 import java.util.List;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.*;
 import static java.util.Collections.emptyList;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.eq;

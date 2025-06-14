@@ -6,7 +6,7 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 
 import javax.annotation.Resource;
 
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
 
 import cn.iocoder.yudao.module.infra.controller.admin.demo.vo.*;
 import cn.iocoder.yudao.module.infra.dal.dataobject.demo.InfraStudentDO;
@@ -20,8 +20,8 @@ import java.time.LocalDateTime;
 
 import static cn.hutool.core.util.RandomUtil.*;
 import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.*;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.*;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.*;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.*;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.*;
 import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.*;
 import static cn.iocoder.yudao.framework.common.util.date.DateUtils.*;

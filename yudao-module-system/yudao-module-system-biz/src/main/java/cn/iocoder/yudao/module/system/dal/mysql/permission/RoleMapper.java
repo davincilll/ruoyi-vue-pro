@@ -1,9 +1,9 @@
 package cn.iocoder.yudao.module.system.dal.mysql.permission;
 
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.query.LambdaQueryWrapperX;
 import cn.iocoder.yudao.module.system.controller.admin.permission.vo.role.RolePageReqVO;
 import cn.iocoder.yudao.module.system.dal.dataobject.permission.RoleDO;
 import org.apache.ibatis.annotations.Mapper;

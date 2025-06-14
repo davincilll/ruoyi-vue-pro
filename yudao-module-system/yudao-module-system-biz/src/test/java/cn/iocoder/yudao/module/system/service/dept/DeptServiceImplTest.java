@@ -2,7 +2,7 @@ package cn.iocoder.yudao.module.system.service.dept;
 
 import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
 import cn.iocoder.yudao.framework.common.util.object.ObjectUtils;
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
 import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptListReqVO;
 import cn.iocoder.yudao.module.system.controller.admin.dept.vo.dept.DeptSaveReqVO;
 import cn.iocoder.yudao.module.system.dal.dataobject.dept.DeptDO;
@@ -15,9 +15,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.*;
 import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.*;
 import static java.util.Collections.singletonList;
 import static org.junit.jupiter.api.Assertions.*;

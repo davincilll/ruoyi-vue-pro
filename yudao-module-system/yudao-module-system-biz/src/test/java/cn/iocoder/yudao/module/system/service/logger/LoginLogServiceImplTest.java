@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.system.service.logger;
 
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
 import cn.iocoder.yudao.module.system.api.logger.dto.LoginLogCreateReqDTO;
 import cn.iocoder.yudao.module.system.controller.admin.logger.vo.loginlog.LoginLogPageReqVO;
 import cn.iocoder.yudao.module.system.dal.dataobject.logger.LoginLogDO;
@@ -14,8 +14,8 @@ import javax.annotation.Resource;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
 import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomPojo;
 import static cn.iocoder.yudao.module.system.enums.logger.LoginResultEnum.CAPTCHA_CODE_ERROR;
 import static cn.iocoder.yudao.module.system.enums.logger.LoginResultEnum.SUCCESS;
 import static org.junit.jupiter.api.Assertions.assertEquals;

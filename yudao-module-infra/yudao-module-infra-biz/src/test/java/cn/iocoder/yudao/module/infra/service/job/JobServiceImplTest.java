@@ -2,8 +2,8 @@ package cn.iocoder.yudao.module.infra.service.job;
 
 import cn.hutool.extra.spring.SpringUtil;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.quartz.core.scheduler.SchedulerManager;
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.ability.job.core.scheduler.SchedulerManager;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
 import cn.iocoder.yudao.module.infra.controller.admin.job.vo.job.JobPageReqVO;
 import cn.iocoder.yudao.module.infra.controller.admin.job.vo.job.JobSaveReqVO;
 import cn.iocoder.yudao.module.infra.dal.dataobject.job.JobDO;
@@ -19,10 +19,10 @@ import org.springframework.context.annotation.Import;
 import javax.annotation.Resource;
 
 import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomString;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomString;
 import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.eq;

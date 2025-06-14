@@ -1,11 +1,11 @@
 package cn.iocoder.yudao.module.system.controller.admin.ip;
 
 import cn.hutool.core.lang.Assert;
+import cn.iocoder.yudao.framework.ability.ip.core.Area;
+import cn.iocoder.yudao.framework.ability.ip.core.utils.AreaUtils;
+import cn.iocoder.yudao.framework.ability.ip.core.utils.IPUtils;
 import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.ip.core.Area;
-import cn.iocoder.yudao.framework.ip.core.utils.AreaUtils;
-import cn.iocoder.yudao.framework.ip.core.utils.IPUtils;
 import cn.iocoder.yudao.module.system.controller.admin.ip.vo.AreaNodeRespVO;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;

@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.infra.service.job;
 
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
 import cn.iocoder.yudao.module.infra.controller.admin.job.vo.log.JobLogPageReqVO;
 import cn.iocoder.yudao.module.infra.dal.dataobject.job.JobLogDO;
 import cn.iocoder.yudao.module.infra.dal.mysql.job.JobLogMapper;
@@ -14,11 +14,11 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.*;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.addTime;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
 import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 

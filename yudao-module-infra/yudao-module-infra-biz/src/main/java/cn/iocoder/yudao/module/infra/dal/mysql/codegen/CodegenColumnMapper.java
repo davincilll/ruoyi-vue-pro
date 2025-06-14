@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.infra.dal.mysql.codegen;
 
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.query.LambdaQueryWrapperX;
 import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenColumnDO;
 import org.apache.ibatis.annotations.Mapper;
 

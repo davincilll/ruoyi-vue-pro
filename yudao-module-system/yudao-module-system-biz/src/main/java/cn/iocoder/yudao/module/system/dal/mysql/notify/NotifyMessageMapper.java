@@ -1,9 +1,9 @@
 package cn.iocoder.yudao.module.system.dal.mysql.notify;
 
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.query.LambdaQueryWrapperX;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.query.QueryWrapperX;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.QueryWrapperX;
 import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessageMyPageReqVO;
 import cn.iocoder.yudao.module.system.controller.admin.notify.vo.message.NotifyMessagePageReqVO;
 import cn.iocoder.yudao.module.system.dal.dataobject.notify.NotifyMessageDO;

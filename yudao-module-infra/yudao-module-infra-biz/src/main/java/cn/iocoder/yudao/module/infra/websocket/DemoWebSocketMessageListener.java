@@ -1,9 +1,9 @@
 package cn.iocoder.yudao.module.infra.websocket;
 
 import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
-import cn.iocoder.yudao.framework.websocket.core.listener.WebSocketMessageListener;
-import cn.iocoder.yudao.framework.websocket.core.sender.WebSocketMessageSender;
-import cn.iocoder.yudao.framework.websocket.core.util.WebSocketFrameworkUtils;
+import cn.iocoder.yudao.framework.ability.websocket.core.listener.WebSocketMessageListener;
+import cn.iocoder.yudao.framework.ability.websocket.core.sender.WebSocketMessageSender;
+import cn.iocoder.yudao.framework.ability.websocket.core.util.WebSocketFrameworkUtils;
 import cn.iocoder.yudao.module.infra.websocket.message.DemoReceiveMessage;
 import cn.iocoder.yudao.module.infra.websocket.message.DemoSendMessage;
 import org.springframework.stereotype.Component;

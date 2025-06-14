@@ -1,11 +1,11 @@
 package cn.iocoder.yudao.module.system.controller.admin.dict;
 
-import cn.iocoder.yudao.framework.apilog.core.annotation.ApiAccessLog;
+import cn.iocoder.yudao.framework.ability.excel.excel.core.util.ExcelUtils;
+import cn.iocoder.yudao.framework.ability.web.apilog.core.annotation.ApiAccessLog;
 import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.iocoder.yudao.framework.common.pojo.PageParam;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
 import cn.iocoder.yudao.module.system.controller.admin.dict.vo.type.DictTypePageReqVO;
 import cn.iocoder.yudao.module.system.controller.admin.dict.vo.type.DictTypeRespVO;
 import cn.iocoder.yudao.module.system.controller.admin.dict.vo.type.DictTypeSaveReqVO;
@@ -25,7 +25,7 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.apilog.core.enums.OperateTypeEnum.EXPORT;
+import static cn.iocoder.yudao.framework.ability.web.apilog.core.enums.OperateTypeEnum.EXPORT;
 import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 字典类型")

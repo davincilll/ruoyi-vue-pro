@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.system.dal.dataobject.dict;
 
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.dataobject.BaseDO;
 import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

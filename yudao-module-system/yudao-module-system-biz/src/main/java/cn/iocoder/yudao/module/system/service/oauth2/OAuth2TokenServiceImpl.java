@@ -5,14 +5,14 @@ import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.ObjectUtil;
 import cn.hutool.core.util.StrUtil;
+import cn.iocoder.yudao.framework.ability.security.core.LoginUser;
+import cn.iocoder.yudao.framework.ability.tenant.core.context.TenantContextHolder;
+import cn.iocoder.yudao.framework.ability.tenant.core.util.TenantUtils;
 import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import cn.iocoder.yudao.framework.common.exception.enums.GlobalErrorCodeConstants;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.iocoder.yudao.framework.common.util.date.DateUtils;
 import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.security.core.LoginUser;
-import cn.iocoder.yudao.framework.tenant.core.context.TenantContextHolder;
-import cn.iocoder.yudao.framework.tenant.core.util.TenantUtils;
 import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.token.OAuth2AccessTokenPageReqVO;
 import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2AccessTokenDO;
 import cn.iocoder.yudao.module.system.dal.dataobject.oauth2.OAuth2ClientDO;
@@ -190,7 +190,7 @@ public class OAuth2TokenServiceImpl implements OAuth2TokenService {
     }
 
     /**
-     * 加载用户信息，方便 {@link cn.iocoder.yudao.framework.security.core.LoginUser} 获取到昵称、部门等信息
+     * 加载用户信息，方便 {@link LoginUser} 获取到昵称、部门等信息
      *
      * @param userId 用户编号
      * @param userType 用户类型

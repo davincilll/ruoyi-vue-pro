@@ -33,8 +33,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
+import static cn.iocoder.yudao.framework.ability.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
-import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 import static cn.iocoder.yudao.module.infra.framework.file.core.utils.FileTypeUtils.writeAttachment;
 
 @Tag(name = "管理后台 - 代码生成器")

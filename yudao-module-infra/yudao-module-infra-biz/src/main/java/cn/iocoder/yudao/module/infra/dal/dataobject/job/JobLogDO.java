@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.infra.dal.dataobject.job;
 
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
-import cn.iocoder.yudao.framework.quartz.core.handler.JobHandler;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.ability.job.core.handler.JobHandler;
 import cn.iocoder.yudao.module.infra.enums.job.JobLogStatusEnum;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableName;

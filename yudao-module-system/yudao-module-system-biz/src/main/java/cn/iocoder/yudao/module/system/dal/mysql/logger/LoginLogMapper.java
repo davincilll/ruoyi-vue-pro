@@ -1,8 +1,8 @@
 package cn.iocoder.yudao.module.system.dal.mysql.logger;
 
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.mybatis.core.mapper.BaseMapperX;
-import cn.iocoder.yudao.framework.mybatis.core.query.LambdaQueryWrapperX;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.mapper.BaseMapperX;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.query.LambdaQueryWrapperX;
 import cn.iocoder.yudao.module.system.controller.admin.logger.vo.loginlog.LoginLogPageReqVO;
 import cn.iocoder.yudao.module.system.dal.dataobject.logger.LoginLogDO;
 import cn.iocoder.yudao.module.system.enums.logger.LoginResultEnum;

@@ -17,8 +17,8 @@ import javax.annotation.Resource;
 import javax.validation.Valid;
 import java.util.List;
 
+import static cn.iocoder.yudao.framework.ability.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
-import static cn.iocoder.yudao.framework.security.core.util.SecurityFrameworkUtils.getLoginUserId;
 
 @Tag(name = "管理后台 - 邮件模版")
 @RestController

@@ -1,11 +1,11 @@
 package cn.iocoder.yudao.module.infra.controller.admin.demo.demo03;
 
-import cn.iocoder.yudao.framework.apilog.core.annotation.ApiAccessLog;
+import cn.iocoder.yudao.framework.ability.excel.excel.core.util.ExcelUtils;
+import cn.iocoder.yudao.framework.ability.web.apilog.core.annotation.ApiAccessLog;
 import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.iocoder.yudao.framework.common.pojo.PageParam;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.excel.core.util.ExcelUtils;
 import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.vo.Demo03StudentPageReqVO;
 import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.vo.Demo03StudentRespVO;
 import cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.vo.Demo03StudentSaveReqVO;
@@ -26,7 +26,7 @@ import javax.validation.Valid;
 import java.io.IOException;
 import java.util.List;
 
-import static cn.iocoder.yudao.framework.apilog.core.enums.OperateTypeEnum.EXPORT;
+import static cn.iocoder.yudao.framework.ability.web.apilog.core.enums.OperateTypeEnum.EXPORT;
 import static cn.iocoder.yudao.framework.common.pojo.CommonResult.success;
 
 @Tag(name = "管理后台 - 学生")

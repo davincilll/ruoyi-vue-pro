@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.infra.service.db;
 
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.util.JdbcUtils;
 import cn.iocoder.yudao.framework.common.util.object.BeanUtils;
-import cn.iocoder.yudao.framework.mybatis.core.util.JdbcUtils;
 import cn.iocoder.yudao.module.infra.controller.admin.db.vo.DataSourceConfigSaveReqVO;
 import cn.iocoder.yudao.module.infra.dal.dataobject.db.DataSourceConfigDO;
 import cn.iocoder.yudao.module.infra.dal.mysql.db.DataSourceConfigMapper;

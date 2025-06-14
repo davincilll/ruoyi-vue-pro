@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.infra.job.logger;
 
-import cn.iocoder.yudao.framework.quartz.core.handler.JobHandler;
-import cn.iocoder.yudao.framework.tenant.core.aop.TenantIgnore;
+import cn.iocoder.yudao.framework.ability.job.core.handler.JobHandler;
+import cn.iocoder.yudao.framework.ability.tenant.core.aop.TenantIgnore;
 import cn.iocoder.yudao.module.infra.service.logger.ApiAccessLogService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

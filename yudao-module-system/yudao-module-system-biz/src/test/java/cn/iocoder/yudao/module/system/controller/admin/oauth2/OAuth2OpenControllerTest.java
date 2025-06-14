@@ -3,13 +3,13 @@ package cn.iocoder.yudao.module.system.controller.admin.oauth2;
 import cn.hutool.core.collection.ListUtil;
 import cn.hutool.core.date.LocalDateTimeUtil;
 import cn.hutool.core.map.MapUtil;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseMockitoUnitTest;
 import cn.iocoder.yudao.framework.common.core.KeyValue;
 import cn.iocoder.yudao.framework.common.enums.UserTypeEnum;
 import cn.iocoder.yudao.framework.common.exception.ErrorCode;
 import cn.iocoder.yudao.framework.common.pojo.CommonResult;
 import cn.iocoder.yudao.framework.common.util.collection.SetUtils;
 import cn.iocoder.yudao.framework.common.util.object.ObjectUtils;
-import cn.iocoder.yudao.framework.test.core.ut.BaseMockitoUnitTest;
 import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAccessTokenRespVO;
 import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.open.OAuth2OpenAuthorizeInfoRespVO;
 import cn.iocoder.yudao.module.system.controller.admin.oauth2.vo.open.OAuth2OpenCheckTokenRespVO;
@@ -33,11 +33,12 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomString;
 import static cn.iocoder.yudao.framework.common.util.collection.SetUtils.asSet;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomString;
+
 import static java.util.Arrays.asList;
 import static org.hamcrest.CoreMatchers.anyOf;
 import static org.hamcrest.CoreMatchers.is;
@@ -274,7 +275,7 @@ public class OAuth2OpenControllerTest extends BaseMockitoUnitTest {
         String scope = "{\"read\": true, \"write\": false}";
         String redirectUri = "https://www.iocoder.cn";
         String state = "test";
-        // mock 方法（client)
+        // mock 方法(client)
         OAuth2ClientDO client = randomPojo(OAuth2ClientDO.class).setClientId(clientId).setAdditionalInformation(null);
         when(oauth2ClientService.validOAuthClientFromCache(eq(clientId), isNull(), eq("implicit"),
                 eq(asSet("read", "write")), eq(redirectUri))).thenReturn(client);
@@ -306,7 +307,7 @@ public class OAuth2OpenControllerTest extends BaseMockitoUnitTest {
         String scope = "{\"read\": true, \"write\": false}";
         String redirectUri = "https://www.iocoder.cn";
         String state = "test";
-        // mock 方法（client)
+        // mock 方(client)
         OAuth2ClientDO client = randomPojo(OAuth2ClientDO.class).setClientId(clientId).setAdditionalInformation(null);
         when(oauth2ClientService.validOAuthClientFromCache(eq(clientId), isNull(), eq("authorization_code"),
                 eq(asSet("read", "write")), eq(redirectUri))).thenReturn(client);

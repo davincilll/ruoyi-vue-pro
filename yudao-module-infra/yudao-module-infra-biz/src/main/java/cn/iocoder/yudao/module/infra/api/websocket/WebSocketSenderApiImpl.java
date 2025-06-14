@@ -1,6 +1,6 @@
 package cn.iocoder.yudao.module.infra.api.websocket;
 
-import cn.iocoder.yudao.framework.websocket.core.sender.WebSocketMessageSender;
+import cn.iocoder.yudao.framework.ability.websocket.core.sender.WebSocketMessageSender;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;

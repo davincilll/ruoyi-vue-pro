@@ -2,7 +2,7 @@ package cn.iocoder.yudao.module.system.service.notice;
 
 import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
 import cn.iocoder.yudao.module.system.controller.admin.notice.vo.NoticePageReqVO;
 import cn.iocoder.yudao.module.system.controller.admin.notice.vo.NoticeSaveReqVO;
 import cn.iocoder.yudao.module.system.dal.dataobject.notice.NoticeDO;
@@ -13,10 +13,10 @@ import org.springframework.context.annotation.Import;
 import javax.annotation.Resource;
 
 import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomLongId;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.randomPojo;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomLongId;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.randomPojo;
 import static cn.iocoder.yudao.module.system.enums.ErrorCodeConstants.NOTICE_NOT_FOUND;
 import static org.junit.jupiter.api.Assertions.*;
 

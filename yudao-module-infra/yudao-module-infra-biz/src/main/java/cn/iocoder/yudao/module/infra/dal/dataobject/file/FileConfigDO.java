@@ -1,8 +1,8 @@
 package cn.iocoder.yudao.module.infra.dal.dataobject.file;
 
 import cn.hutool.core.util.StrUtil;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.dataobject.BaseDO;
 import cn.iocoder.yudao.framework.common.util.json.JsonUtils;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import cn.iocoder.yudao.module.infra.framework.file.core.client.FileClientConfig;
 import cn.iocoder.yudao.module.infra.framework.file.core.client.db.DBFileClientConfig;
 import cn.iocoder.yudao.module.infra.framework.file.core.client.ftp.FtpFileClientConfig;

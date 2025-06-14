@@ -3,7 +3,7 @@ package cn.iocoder.yudao.module.infra.service.codegen.inner;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.ReflectUtil;
 import cn.hutool.core.util.StrUtil;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.dataobject.BaseDO;
 import cn.iocoder.yudao.module.infra.convert.codegen.CodegenConvert;
 import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenColumnDO;
 import cn.iocoder.yudao.module.infra.dal.dataobject.codegen.CodegenTableDO;
@@ -64,7 +64,7 @@ public class CodegenBuilder {
      */
     public static final String TENANT_ID_FIELD = "tenantId";
     /**
-     * {@link cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO} 的字段
+     * {@link BaseDO} 的字段
      */
     public static final Set<String> BASE_DO_FIELDS = new HashSet<>();
     /**

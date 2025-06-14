@@ -1,7 +1,7 @@
 package cn.iocoder.yudao.module.system.dal.dataobject.tenant;
 
+import cn.iocoder.yudao.framework.ability.data.mybatis.core.dataobject.BaseDO;
 import cn.iocoder.yudao.framework.common.enums.CommonStatusEnum;
-import cn.iocoder.yudao.framework.mybatis.core.dataobject.BaseDO;
 import cn.iocoder.yudao.module.system.dal.dataobject.user.AdminUserDO;
 import com.baomidou.mybatisplus.annotation.KeySequence;
 import com.baomidou.mybatisplus.annotation.TableName;

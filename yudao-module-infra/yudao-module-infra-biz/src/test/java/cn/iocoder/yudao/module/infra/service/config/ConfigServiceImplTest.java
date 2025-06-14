@@ -1,9 +1,8 @@
 package cn.iocoder.yudao.module.infra.service.config;
 
+import cn.iocoder.yudao.framework.ability.test.core.ut.BaseDbUnitTest;
 import cn.iocoder.yudao.framework.common.pojo.PageResult;
 import cn.iocoder.yudao.framework.common.util.collection.ArrayUtils;
-import cn.iocoder.yudao.framework.test.core.ut.BaseDbUnitTest;
-import cn.iocoder.yudao.framework.test.core.util.RandomUtils;
 import cn.iocoder.yudao.module.infra.controller.admin.config.vo.ConfigPageReqVO;
 import cn.iocoder.yudao.module.infra.controller.admin.config.vo.ConfigSaveReqVO;
 import cn.iocoder.yudao.module.infra.dal.dataobject.config.ConfigDO;
@@ -16,12 +15,12 @@ import javax.annotation.Resource;
 import java.util.function.Consumer;
 
 import static cn.hutool.core.util.RandomUtil.randomEle;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertPojoEquals;
+import static cn.iocoder.yudao.framework.ability.test.core.util.AssertUtils.assertServiceException;
+import static cn.iocoder.yudao.framework.ability.test.core.util.RandomUtils.*;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildBetweenTime;
 import static cn.iocoder.yudao.framework.common.util.date.LocalDateTimeUtils.buildTime;
 import static cn.iocoder.yudao.framework.common.util.object.ObjectUtils.cloneIgnoreId;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertPojoEquals;
-import static cn.iocoder.yudao.framework.test.core.util.AssertUtils.assertServiceException;
-import static cn.iocoder.yudao.framework.test.core.util.RandomUtils.*;
 import static cn.iocoder.yudao.module.infra.enums.ErrorCodeConstants.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -213,7 +212,7 @@ public class ConfigServiceImplTest extends BaseDbUnitTest {
         Consumer<ConfigDO> consumer = (o) -> {
             o.setType(randomEle(ConfigTypeEnum.values()).getType()); // 保证 key 的范围
         };
-        return RandomUtils.randomPojo(ConfigDO.class, ArrayUtils.append(consumer, consumers));
+        return randomPojo(ConfigDO.class, ArrayUtils.append(consumer, consumers));
     }
 
 }

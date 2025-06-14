@@ -1,12 +1,13 @@
 package cn.iocoder.yudao.module.infra.controller.admin.demo.demo03.vo;
 
+import cn.iocoder.yudao.framework.ability.excel.excel.core.annotations.DictFormat;
+import cn.iocoder.yudao.framework.ability.excel.excel.core.convert.DictConvert;
+import com.alibaba.excel.annotation.ExcelIgnoreUnannotated;
+import com.alibaba.excel.annotation.ExcelProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
-import lombok.*;
+import lombok.Data;
 
 import java.time.LocalDateTime;
-import com.alibaba.excel.annotation.*;
-import cn.iocoder.yudao.framework.excel.core.annotations.DictFormat;
-import cn.iocoder.yudao.framework.excel.core.convert.DictConvert;
 
 @Schema(description = "管理后台 - 学生 Response VO")
 @Data
