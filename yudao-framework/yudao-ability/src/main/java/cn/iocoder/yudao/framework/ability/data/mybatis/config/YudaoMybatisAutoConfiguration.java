@@ -25,6 +25,14 @@ import java.util.concurrent.TimeUnit;
  *
  * @author 芋道源码
  */
+/* TODO:
+ * 1.无需DbTypeEnum，后续如果需要的话，通过配置的驱动类获取使用的DbType进行其他的一些特殊逻辑
+ * 2.通用字段自动填充器，使用JPA的方式进行实现
+ * 3.分页插件，使用JPA的方式进行实现
+ * 4.拓展的MapperX和WrapperX能力使用JPA和QueryDsl的方式进行实现
+ * 5.配置通用的数据映射器。
+ */
+
 @AutoConfiguration(before = MybatisPlusAutoConfiguration.class) // 目的：先于 MyBatis Plus 自动配置，避免 @MapperScan 可能扫描不到 Mapper 打印 warn 日志
 @MapperScan(value = "${yudao.info.base-package}", annotationClass = Mapper.class,
         lazyInitialization = "${mybatis.lazy-initialization:false}") // Mapper 懒加载，目前仅用于单元测试

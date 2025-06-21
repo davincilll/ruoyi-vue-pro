@@ -28,3 +28,4 @@ cn.iocoder.yudao.framework.ability.monitor.config.YudaoMetricsAutoConfiguration
 cn.iocoder.yudao.framework.ability.monitor.config.YudaoTracerAutoConfiguration
 cn.iocoder.yudao.framework.ability.websocket.config.YudaoWebSocketAutoConfiguration
 cn.iocoder.yudao.framework.ability.tenant.config.YudaoTenantAutoConfiguration
+cn.iocoder.yudao.framework.ability.data.jpa.config.YudaoJpaAutoConfiguration
