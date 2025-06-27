@@ -33,6 +33,7 @@ public class TenantJobAspect {
 
     @Around("@annotation(tenantJob)")
     public String around(ProceedingJoinPoint joinPoint, TenantJob tenantJob) {
+        // TODO: 增强这里返回值的可拓展性
         // 获得租户列表
         List<Long> tenantIds = tenantFrameworkService.getTenantIds();
         if (CollUtil.isEmpty(tenantIds)) {

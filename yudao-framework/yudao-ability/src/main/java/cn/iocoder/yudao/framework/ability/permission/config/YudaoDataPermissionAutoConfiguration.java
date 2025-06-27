@@ -20,7 +20,8 @@ import java.util.List;
  */
 @AutoConfiguration
 public class YudaoDataPermissionAutoConfiguration {
-
+    // TODO: 基于JPA重构数据权限模块
+    // TODO: 使用JPA的继承规则实现User的继承 实现多方User AdminUser和MemberUser和商家User
     @Bean
     public DataPermissionRuleFactory dataPermissionRuleFactory(List<DataPermissionRule> rules) {
         return new DataPermissionRuleFactoryImpl(rules);

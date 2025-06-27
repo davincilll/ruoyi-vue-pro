@@ -45,7 +45,6 @@ import static cn.iocoder.yudao.framework.common.util.collection.CollectionUtils.
 @Validated
 @Slf4j
 public class AuthController {
-
     @Resource
     private AdminAuthService authService;
     @Resource

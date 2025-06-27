@@ -30,6 +30,8 @@ import java.io.IOException;
  */
 @RequiredArgsConstructor
 public class TokenAuthenticationFilter extends OncePerRequestFilter {
+    // 划分SpringSecurity的界限，SpringSecurity是用来解析进行扁平化的
+    // TODO:使用JWT更优雅实现用户和租户
 
     private final SecurityProperties securityProperties;
 
